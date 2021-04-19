@@ -39,7 +39,7 @@ This project is licensed under the Creative Commons BY-CA License version 4.0.
 ## Dependencies
 
 - [Go][] 
-- [Mage][] mascot »Gary«
+- [Mage][] with its mascot named »Gary«
 - [Remark][]
 
 ---

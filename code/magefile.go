@@ -14,7 +14,7 @@ var Default = Build
 
 // Build builds the executable and places it in dist
 func Build() error {
-	mg.Deps(Web.Build)
+	mg.Deps(requireGoVersion, Web.Build)
 
 	return sh.RunWith(defaultEnv(), "go", "build", "-o", "dist/server")
 }

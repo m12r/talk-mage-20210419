@@ -221,6 +221,16 @@ func MeaningOfLife() {
 
 class: middle
 
+# Helper Libraries
+
+- github.com/mage/mage/mg
+- github.com/mage/mage/sh
+- github.com/mage/mage/target
+
+---
+
+class: middle
+
 # Zero Install Option
 
 Just create a go file in the `main` package with the following
