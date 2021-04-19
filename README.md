@@ -27,8 +27,8 @@ cd code
 mage
 ```
 
-**Note:** instead of `mage`, you can also run `go run mage`, if you don't have
-`mage` installed.
+**Note:** instead of `mage`, you can also run `go run bootstrap.go`, if you
+don't have `mage` installed.
 
 ## License
 
