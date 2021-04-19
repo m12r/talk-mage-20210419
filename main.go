@@ -18,13 +18,13 @@ import (
 var rootFS embed.FS
 
 func main() {
-	if err := run(); err != nil {
+	if err := run(rootFS); err != nil {
 		fmt.Fprintf(os.Stderr, "http server: %v\n", err)
 		os.Exit(1)
 	}
 }
 
-func run() error {
+func run(rootFS fs.FS) error {
 	ctx, stop := signal.NotifyContext(context.Background(), syscall.SIGINT, syscall.SIGTERM)
 	defer stop()
 
