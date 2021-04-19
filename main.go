@@ -14,7 +14,7 @@ import (
 	"time"
 )
 
-//go:embed web
+//go:embed presentation
 var rootFS embed.FS
 
 func main() {
@@ -28,7 +28,7 @@ func run() error {
 	ctx, stop := signal.NotifyContext(context.Background(), syscall.SIGINT, syscall.SIGTERM)
 	defer stop()
 
-	webFS, err := fs.Sub(rootFS, "web")
+	webFS, err := fs.Sub(rootFS, "presentation")
 	if err != nil {
 		return err
 	}
